@@ -8,11 +8,10 @@ class Pet:
         self.__name = name
         self.__animal_type = animal_type
         self.__age = age
-        
+       
     # define the mutator methods where we will store values in the data attributes
     
     # define the set_name method, this assigns a value to the __name field
-    #This seems redundant to me, but the question required it
     def set_name(self,name):
         self.__name = name
     
@@ -25,7 +24,6 @@ class Pet:
     # define the set_age method, this assigns a value to the __age field
     def set_age (self, age):
         self.__age = age
-    
     
     # define the accessor methods where we will return the values from the data attributes
     
