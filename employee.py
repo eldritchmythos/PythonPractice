@@ -22,6 +22,8 @@ class Employee:
     def get_emp_num(self):
         return self.__emp_num
     
+    
+    
 # create a subclass called ProductionWorker
 class ProductionWorker(Employee):
     
@@ -49,4 +51,37 @@ class ProductionWorker(Employee):
     
     def get_hourly_pay(self):
         return self.__hourly_pay
+    
+    
+    
+    
+    # Create the ShiftSupervisor subclass
+class ShiftSupervisor(Employee):
+
+    # Initialize inherited and new data attributes for the new subclass
+    def __init__(self, emp_name, emp_num, annual_salary, annual_production_bonus):
+        
+        # Initialize the data attributes for the superclass
+        super().__init__(emp_name, emp_num)
+        
+        # Initialize the new data attributes
+        self.__annual_salary = annual_salary
+        self.__annual_production_bonus = annual_production_bonus
+    
+    # define mutator methods for data attributes
+    def set_annual_salary(self, annual_salary):
+        self.__annual_salary = annual_salary
+        
+
+    def set_annual_production_bonus(self, annual_production_bonus):
+        self.__annual_production_bonus = annual_production_bonus
+        
+    
+    # define the accessor methods
+    def get_annual_salary(self):
+        return self.__annual_salary
+    
+    
+    def get_annual_production_bonus(self):
+        return self.__annual_production_bonus
     
